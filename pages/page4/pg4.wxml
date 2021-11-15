@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<!--<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>haha</view>-
+</view>-->
+<image src="/pic/command_empty.jpg" class="pic1-1" mode='widthFix'></image>
+<input type='text' class='userBox' name='repoName'  bindinput='getName'></input>
+<image src="/pic/pic5.2.png" class="pic5-1" bindtap="tap"></image>
+<image src="/pic/remote_comm1.png" class="remote_command" ></image>
+<view class="hint1" hidden="{{control_remote}}">请正确输入命令，这里不用写仓库url，但真正操作时要加上</view>
+<view  class="hint2" hidden="{{!control_remote}}">操作成功</view>

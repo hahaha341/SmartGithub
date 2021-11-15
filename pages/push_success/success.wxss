@@ -1,0 +1,66 @@
+/* pages/page4/pg4.wxss *//**index.wxss**/
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #aaa;
+  }
+  
+  .userinfo-avatar {
+    overflow: hidden;
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+  }
+  
+  .usermotto {
+    margin-top: 200px;
+  }
+  .pic1-1 {
+    width:100%;
+  }
+  .pic5-1 {
+    position: absolute;
+    left:573rpx;
+    top:128rpx;
+    height:60rpx;
+    width:128rpx;
+  }
+  .pic5-2 {
+    position: absolute;
+    left:320rpx;
+    top:400rpx;
+    height:65rpx;
+    width:360rpx;
+  }
+  .pic5-3 {
+    position: absolute;
+    left:158rpx;
+    top:159rpx;
+    height:214rpx;
+    width:375rpx;
+  }
+  .userBox{
+    position: absolute;
+    left:12rpx;
+    top:32rpx;
+    height:17.3rpx;
+    width:242rpx;
+    color:white;
+    background-color: purple;
+  }
+  .pic8{
+    position: absolute;
+    left:0%;
+    top:8%;
+    height:50%;
+    width:90%;
+  }
+  .remote_command{
+    position: absolute;
+    top:220rpx;
+    left:260rpx;
+    width:45%;
+    height:20%;
+  }

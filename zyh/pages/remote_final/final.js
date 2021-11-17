@@ -4,6 +4,10 @@ const app = getApp()
 
 Page({
   data: {
+    showModal:false,
+    isNext1:false,
+    isNext11:false,
+    control_remote:false,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -45,10 +49,60 @@ Page({
       hasUserInfo: true
     })
   },
-  tap1:function(){
-    wx.navigateTo({
-        url: '/pages/push_success/success',
+
+  /*getName:function(e){
+    this.setData({
+      value_remote:e.detail.value
+    })
+    if(this.data.value_remote=="git clone")
+    {
+      this.setData({
+        control_remote:true,
+        isNext1:true
       })
     }
-  
+    else{
+      this.setData({
+        control_remote:false
+      })
+    }
+  },
+  getName1:function(e){
+    this.setData({
+      value_remote:e.detail.value
+    })
+    if(this.data.value_remote=="ls")
+    {
+      this.setData({
+        control_remote:true,
+        isNext11:true
+      })
+    }
+    else{
+      this.setData({
+        isNext11:false
+      })
+    }
+  },*/
+  jmp:function(){
+    this.setData({
+        isNext11:true
+      })
+  },
+  fin:function(){
+    this.setData({
+      showModal:true
+    })
+  },
+  cancel: function(){
+   wx.navigateTo({
+     url: '/pages/create_repo1/index',
+   })
+  },
+  confirm: function(){
+    wx.navigateTo({
+      url: '',
+    })
+  }
+
 })

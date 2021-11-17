@@ -4,6 +4,9 @@ const app = getApp()
 
 Page({
   data: {
+    isNext1:false,
+    isNext11:false,
+    control_remote:false,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -45,9 +48,43 @@ Page({
       hasUserInfo: true
     })
   },
-  tap2:function(){
+  getName:function(e){
+    this.setData({
+      value_remote:e.detail.value
+    })
+    if(this.data.value_remote=="git clone")
+    {
+      this.setData({
+        control_remote:true,
+        isNext1:true
+      })
+    }
+    else{
+      this.setData({
+        control_remote:false
+      })
+    }
+  },
+  getName1:function(e){
+    this.setData({
+      value_remote:e.detail.value
+    })
+    if(this.data.value_remote=="ls")
+    {
+      this.setData({
+        control_remote:true,
+        isNext11:true
+      })
+    }
+    else{
+      this.setData({
+        isNext11:false
+      })
+    }
+  },
+  jmp:function(){
     wx.navigateTo({
-      url: '/pages/complete/complete',
+      url: '/pages/remote_final/final',
     })
   }
 })

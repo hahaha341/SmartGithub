@@ -1,13 +1,15 @@
 {
     "pages": [
-        "pages/page4/pg4",
         "pages/create_repo1/index",
         "pages/create_repo2/pg1",
         "pages/page2/pg2",
         "pages/page3/pg3",
+        "pages/page4/pg4",
         "pages/operate_push/push",
         "pages/push_success/success",
-        "pages/complete/complete"
+        "pages/complete/complete",
+        "pages/drag_remote_repo/grag_remote",
+        "pages/remote_final/final"
     ],
     "window": {
         "backgroundTextStyle": "light",
